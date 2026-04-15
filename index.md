@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Docker Network Documentation
+title: Home
 ---
 
-# 🐳 Docker Network Documentation
+# 🐳 Docker Network Home Lab
 
 Welcome to my Docker infrastructure documentation.
 
@@ -45,3 +45,20 @@ graph TB
     PROM --> CADV
     GRAF --> PROM
 </div>
+
+## Networks
+
+| Network | Subnet | Gateway | Purpose |
+|---------|--------|---------|---------|
+| frontend | 172.20.0.0/16 | 172.20.0.1 | Public services |
+| backend | 172.21.0.0/16 | 172.21.0.1 | Databases/Cache |
+| monitoring | 172.22.0.0/16 | 172.22.0.1 | Observability |
+
+## Docker Commands
+
+```bash
+# List networks
+docker network ls
+
+# Inspect network
+docker network inspect frontend
