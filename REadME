@@ -1,0 +1,5 @@
+Network Summary Table
+Network Name	Subnet	Gateway	Purpose
+frontend	172.20.0.0/16	172.20.0.1	Public-facing services
+backend	172.21.0.0/16	172.21.0.1	Internal services, databases
+monitoring	172.22.0.0/16	172.22.0.1	Observability stack
