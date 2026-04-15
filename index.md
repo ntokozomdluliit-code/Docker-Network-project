@@ -5,17 +5,11 @@ title: Docker Network Documentation
 
 # 🐳 Docker Network Documentation
 
-Welcome to my Docker infrastructure documentation. This site provides a visual reference of all container networks, services, and their interconnections.
-
-## Quick Navigation
-
-- [Production Network](networks/production.md)
-- [Development Network](networks/development.md)
-- [Home Lab Setup](networks/home-lab.md)
+Welcome to my Docker infrastructure documentation.
 
 ## Network Overview
 
-```mermaid
+<div class="mermaid">
 graph TB
     subgraph "External"
         IN[Internet]
@@ -50,3 +44,4 @@ graph TB
     PROM --> NODE
     PROM --> CADV
     GRAF --> PROM
+</div>
