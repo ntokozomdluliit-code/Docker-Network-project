@@ -3,3 +3,7 @@ Network Name	Subnet	Gateway	Purpose
 frontend	172.20.0.0/16	172.20.0.1	Public-facing services
 backend	172.21.0.0/16	172.21.0.1	Internal services, databases
 monitoring	172.22.0.0/16	172.22.0.1	Observability stack
+Container	Image	Network	Internal Port	External Access
+traefik	traefik:v2.10	traefik-public	80, 443	Yes (via CF Tunnel)
+postgres	postgres:15	backend	5432	No
+redis	redis:7	backend	6379	No
